@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" class="logo-img" src="./assets/logo-free-fire.png">
+    <HelloWorld msg="Samuel Antonio Gonalez Fuentes "/>
   </div>
 </template>
 
@@ -14,6 +14,7 @@ export default {
     HelloWorld
   }
 }
+
 </script>
 
 <style>
@@ -24,5 +25,17 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+/* mobile */
+img.logo-img {
+width: 100%;
+}
+
+@media (min-width: 780px)
+{
+  img.logo-img {
+  width: 60%;
+  }
 }
 </style>

@@ -2,31 +2,25 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
+      Es un jugador empedernido de Free Fire, que juega todo el tiempo, es un gran jugador, esta matandome en estos momentos en su mente porque quiere jugar al juego y estoy utilizando el celular.
     </p>
-    <h3>Installed CLI Plugins</h3>
+    <h3>Habilidades de Samuel</h3>
     <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-vuex" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
+      <li>1. Gran habilidad para matar a su enemigo</li>
+      <li>2. Es bueno trabajando en equipo</li>
+      <li>3. Tiene una buena punteria</li>
+      <li>4. Tiene tacnicas ofensivas avanzadas</li> 
     </ul>
-    <h3>Essential Links</h3>
+    <h3>PLataformas donde suele jugar</h3>
     <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
+      <li><a>Movil</a></li>
+      <li><a>PC</a></li>
     </ul>
-    <h3>Ecosystem</h3>
+    <h3>Info de Contacto</h3>
     <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
+      <li><a href="#" target="_blank">Facebook</a></li>
+      <li><a href="#" target="_blank">Instagram</a></li>
+      <li><a href="#" target="_blank">Twitter</a></li>
     </ul>
   </div>
 </template>
@@ -42,6 +36,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+h1{
+font-size: 40px;
+text-shadow: 0 0 5px #fff, 0 0 10px #000, 0 0 15px #000, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18, 2px 2px 2px rgba(82,227,32,0);
+}
 h3 {
   margin: 40px 0 0;
 }
@@ -55,5 +53,21 @@ li {
 }
 a {
   color: #42b983;
+}
+
+/* all devices */
+p{
+font-size: 18px;
+font-weight: 600;
+font-style: italic;
+width: 100%;
+}
+
+/* big screen */
+@media (min-width: 768px) {
+p {
+width: 50%;
+margin: 0 auto;
+}
 }
 </style>
