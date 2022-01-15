@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" class="logo-img" src="./assets/logo-free-fire.png">
-    <HelloWorld msg="Samuel Antonio Gonalez Fuentes "/>
+    <img alt="Vue logo" class="logo-img" src="./assets/logo/shops-512.png">
+    <HelloWorld msg="Fruit Market"/>
   </div>
 </template>
 
