@@ -35,7 +35,7 @@ width: 100%;
 @media (min-width: 780px)
 {
   img.logo-img {
-  width: 60%;
+  width: 40%;
   }
 }
 </style>
