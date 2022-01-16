@@ -12,7 +12,8 @@ export default new Vuex.Store({
       {id: 4, name : 'Grapes', quant : 3, price: 6.75, img: require('../assets/stock/grapes.png') }
     ],
     shoppingCart: [], 
-    totalToPay: 0.00
+    totalToPay: 0.00,
+    remaining_money: 0.00
   }, 
   mutations: {
     getFruitToCart(state, index) {
