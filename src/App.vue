@@ -3,6 +3,7 @@
     <Header></Header>
     <StockList></StockList>
     <ShoppingCart></ShoppingCart>
+    <Payment></Payment>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import Header from './components/Header.vue'
 import StockList from './components/StockList.vue'
 import ShoppingCart from './components/ShoppingCart.vue'
+import Payment from './components/Payment.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     StockList,
-    ShoppingCart
+    ShoppingCart,
+    Payment
   }
 }
 </script>
