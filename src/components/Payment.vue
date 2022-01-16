@@ -12,7 +12,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    
+                    <div class="col-sm-12">
+                        <h3>Your remaining money</h3>
+                        <h4>0.00 $</h4>
+                    </div>
                 </div>
             </div>
         </div>
