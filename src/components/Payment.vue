@@ -5,7 +5,7 @@
                 <h2>Payment</h2>
                 <div class="row mb-2">
                     <div class="col-sm-12 col-md-8">
-                        <input type="number" step="0.01" :min="totalToPay" :value="totalToPay" class="form-control" id="payment_quant" placeholder="Money Received">
+                        <input type="number" step="0.01" :min="totalToPay" v-model="totalPaid" class="form-control" id="payment_quant" placeholder="Money Received">
                     </div>
                     <div class="col-sm-12 col-md-4 d-grid">
                         <button class="btn btn-success">Send Payment</button>
@@ -27,7 +27,7 @@ import { mapState } from 'vuex'
 export default {
 name: 'Payment',
 computed:{
-    ...mapState(['totalToPay'])
+    ...mapState(['totalToPay', 'totalPaid'])
  }
 }
 </script>
