@@ -27,13 +27,13 @@ export default new Vuex.Store({
     },
     proccessPayment(state) {
         if(state.shoppingCart !== [] && state.totalToPay > 0){
-          alert("Payment Proccessed!");
+          alert("payment processed successfully. Thanks for your purchase!");
           state.shoppingCart = []
           state.totalToPay = 0.00
           state.fruits[0].quant = 10, state.fruits[1].quant = 5, state.fruits[2].quant = 25, state.fruits[3].quant = 3;
         }
         else{
-          alert("Select some products!");
+          alert("Select some products to buy!");
         }
     }
   },
