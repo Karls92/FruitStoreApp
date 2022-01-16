@@ -11,9 +11,9 @@ export default new Vuex.Store({
       {id: 3, name : 'Strawberry', quant : 25, price: 10.00, img: require('../assets/stock/strawberry.png')},
       {id: 4, name : 'Grapes', quant : 3, price: 6.75, img: require('../assets/stock/grapes.png') }
     ],
-    shoppingCart: [],
+    shoppingCart: [], 
     totalToPay: 0.00
-  },
+  }, 
   mutations: {
     getFruitToCart(state, index) {
       if(state.fruits[index].quant <= 0) {
@@ -21,8 +21,9 @@ export default new Vuex.Store({
       }else {
         state.fruits[index].quant--
         const indexCart = state.shoppingCart.findIndex(el => el.fruitId === index)
-        indexCart === -1 ? state.shoppingCart.push({fruitId: index, quant: 1}) : state.shoppingCart[indexCart].quant++
+        indexCart === -1 ? state.shoppingCart.push({fruitId: index, quant: 1, subtotal: state.fruits[index].price}) : (state.shoppingCart[indexCart].quant++, state.shoppingCart[indexCart].subtotal += state.fruits[index].price);
         state.totalToPay += state.fruits[index].price
+
       }      
     }
   },
