@@ -23,7 +23,6 @@ export default new Vuex.Store({
         const indexCart = state.shoppingCart.findIndex(el => el.fruitId === index)
         indexCart === -1 ? state.shoppingCart.push({fruitId: index, quant: 1, subtotal: state.fruits[index].price}) : (state.shoppingCart[indexCart].quant++, state.shoppingCart[indexCart].subtotal += state.fruits[index].price);
         state.totalToPay += state.fruits[index].price
-
       }      
     }
   },
