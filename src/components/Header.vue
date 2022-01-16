@@ -1,9 +1,9 @@
 <template>
-    <div class="container">
+    <div class="container mt-3 mb-3">
         <div class="row">
-            <div class="col s12">
+            <div class="col col-sm-12 mb-3">
                 <img alt="Store logo" class="logo-img" src="../assets/logo/shops-512.png">
-                <h1>Fruit Market</h1>
+                <h1>FRUIT STORE</h1>
             </div>
         </div>
     </div>
