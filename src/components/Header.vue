@@ -34,5 +34,4 @@ width: 100%;
   width: 40%;
   }
 }
-
 </style>
