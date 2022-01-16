@@ -2,18 +2,21 @@
   <div id="app">
     <Header></Header>
     <StockList></StockList>
+    <ShoppingCart></ShoppingCart>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
-import StockList from './components/StockList'
+import StockList from './components/StockList.vue'
+import ShoppingCart from './components/ShoppingCart.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    StockList
+    StockList,
+    ShoppingCart
   }
 }
 </script>
