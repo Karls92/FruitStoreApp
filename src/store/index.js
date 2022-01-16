@@ -19,12 +19,13 @@ export default new Vuex.Store({
   mutations: {
     getFruitToCart(state, index) {
       if(state.fruits[index].quant <= 0) {
-        alert("Stock Out!")
+        alert("Sold Out!")
       }else {
         state.fruits[index].quant--
         const indexCart = state.shoppingCart.findIndex(el => el.fruitId === index)
         indexCart === -1 ? state.shoppingCart.push({fruitId: index, quant: 1, subtotal: state.fruits[index].price}) : (state.shoppingCart[indexCart].quant++, state.shoppingCart[indexCart].subtotal += state.fruits[index].price);
         state.totalToPay += state.fruits[index].price
+        state.totalPaid = state.totalToPay.toFixed(2)
       }      
     },
     proccessPayment(state){
