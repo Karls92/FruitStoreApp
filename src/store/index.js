@@ -13,6 +13,7 @@ export default new Vuex.Store({
     ],
     shoppingCart: [], 
     totalToPay: 0.00,
+    totalPaid: 0.00,
     remaining_money: 0.00
   }, 
   mutations: {
@@ -25,6 +26,9 @@ export default new Vuex.Store({
         indexCart === -1 ? state.shoppingCart.push({fruitId: index, quant: 1, subtotal: state.fruits[index].price}) : (state.shoppingCart[indexCart].quant++, state.shoppingCart[indexCart].subtotal += state.fruits[index].price);
         state.totalToPay += state.fruits[index].price
       }      
+    },
+    proccessPayment(state){
+        state.remaining_money = state.totalPaid - state.totalToPay
     }
   },
   actions: {
