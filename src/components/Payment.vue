@@ -8,7 +8,7 @@
                         <input type="number" step="0.01" :min="totalToPay" v-model="totalPaid" class="form-control" id="payment_quant" placeholder="Money Received">
                     </div>
                     <div class="col-sm-12 col-md-4 d-grid">
-                        <button class="btn btn-success">Send Payment</button>
+                        <button class="btn btn-success" @click="proccessPayment">Send Payment</button>
                     </div>
                 </div>
                 <div class="row">
@@ -23,11 +23,12 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 export default {
 name: 'Payment',
 computed:{
-    ...mapState(['totalToPay', 'totalPaid'])
+    ...mapState(['totalToPay', 'totalPaid']),
+    ...mapMutations(['proccessPayment']) 
  }
 }
 </script>
