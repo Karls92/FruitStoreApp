@@ -1,7 +1,7 @@
 <template>
-    <div class="container">
+    <div class="container mt-3 mb-3">
        <div class="row">
-           <div class="col">
+           <div class="col-sm-12 mb-3">
                 <h2>Stock List</h2>
                  <ul class="list-group">
                     <li v-for="(item, index) of fruits" :key='item.id' class="list-group-item d-flex justify-content-between align-items-center">
